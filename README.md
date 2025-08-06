@@ -1,65 +1,44 @@
-# tailwind-svelte-inline-decorator README
+# Tailwind Color Decorator for Svelte
 
-This is the README for your extension "tailwind-svelte-inline-decorator". After writing up a brief description, we recommend including the following sections.
+Visual Studio Code extension that adds inline color decorators for <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="17" alt="tailwindcss logo"/> TailwindCSS hex colors inside <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height="17" alt="svelte logo"/> `.svelte` files. I made this because the popular [`Tailwind CSS IntelliSense`](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) extension shows color decorators but are not editable in `.svelte` files for some reason.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Adds clickable color swatches next to Tailwind classes like:
+  - `text-[#f87171]`
+  - `bg-[#1d4ed8]`
+  - `border-[#10b981]`
+- Works specifically in `.svelte` files.
+- Instantly preview and update colors using the built-in color picker.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Make sure you have `vsce` installed:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+   ```bash
+   npm install -g @vscode/vsce
+   ```
 
-## Requirements
+2. Package the extension:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+   ```bash
+   vsce package
+   ```
 
-## Extension Settings
+3. Install the resulting `.vsix` file in VS Code:
+   - Open the Command Palette (`Ctrl+Shift+P`)
+   - Select `Extensions: Install from VSIX...`
+   - Browse to your `.vsix` file
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Supported Syntax
 
-For example:
+This extension currently supports Tailwind color utility classes that use **custom hex values**, such as:
 
-This extension contributes the following settings:
+```html
+<div class="bg-[#1d4ed8] text-[#f87171ba] border-[#abc]">Colorful!</div>
+```
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Not Supported Yet
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- Named Tailwind colors like `bg-red-500`
+- RGB/HSL/opacity variants
