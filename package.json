@@ -1,0 +1,32 @@
+{
+  "name": "tailwind-svelte-inline-decorator",
+  "displayName": "TailwindCSS inline decorator for Svelte",
+  "description": "Native VSCode CSS color-picker support for tailwindCSS in Svelte files using an inline decorator.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:svelte"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": []
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.102.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.25.1",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
