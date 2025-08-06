@@ -1,6 +1,6 @@
-# Tailwind Color Decorator for Svelte
+# Tailwind Color Decorator for Svelte <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="35"/> <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="35"/> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height="35"/>
 
-Visual Studio Code extension that adds inline color decorators for <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="17" alt="tailwindcss logo"/> TailwindCSS hex colors inside <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height="17" alt="svelte logo"/> `.svelte` files. I made this because the popular [`Tailwind CSS IntelliSense`](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) extension shows color decorators but are not editable in `.svelte` files for some reason.
+Visual Studio Code extension that adds inline color decorators for TailwindCSS hex colors inside `.svelte` files. I made this because the popular [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) extension shows color decorators but are not editable in `.svelte` files for some reason.
 
 ## Features
 
